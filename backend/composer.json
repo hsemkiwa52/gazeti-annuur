@@ -10,7 +10,7 @@
         "barryvdh/laravel-dompdf": "^3.1",
         "laravel/framework": "^13.8",
         "laravel/horizon": "^5.47",
-        "laravel/sanctum": "^4.3",
+        "laravel/sanctum": "^4.0",
         "laravel/tinker": "^3.0",
         "league/flysystem-aws-s3-v3": "^3.35",
         "spatie/laravel-activitylog": "^4.12",
@@ -81,18 +81,18 @@
         }
     },
     "config": {
-    "optimize-autoloader": true,
-    "preferred-install": "dist",
-    "sort-packages": true,
-    "allow-plugins": {
-        "pestphp/pest-plugin": true,
-        "php-http/discovery": true
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true
+        },
+        "platform": {
+            "ext-pcntl": "8.3",
+            "ext-posix": "8.3"
+        }
     },
-    "platform": {
-        "ext-pcntl": "8.3",
-        "ext-posix": "8.3"
-    }
-}
     "minimum-stability": "stable",
     "prefer-stable": true
 }
