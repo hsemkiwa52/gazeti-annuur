@@ -1,39 +1,25 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
-    <main style={{
-      minHeight: '100vh',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      fontFamily: 'sans-serif',
-      backgroundColor: '#f8fafc',
-      color: '#0f172a',
-      padding: '20px',
-      textAlign: 'center'
-    }}>
-      <div style={{
-        maxWidth: '600px',
-        backgroundColor: '#ffffff',
-        padding: '40px',
-        borderRadius: '12px',
-        boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1)'
-      }}>
-        <h1 style={{ fontSize: '2.5rem', color: '#1e3a8a', marginBottom: '10px' }}>
-          Gazeti la An-Nuur
-        </h1>
-        <p style={{ fontSize: '1.2rem', color: '#475569', marginBottom: '20px' }}>
-          Mfumo wa Kidijitali wa Kusoma na Kupakua Magazeti Matoleo Mapya na Yaliyopita.
-        </p>
-        <div style={{
-          padding: '12px',
-          backgroundColor: '#eff6ff',
-          color: '#1d4ed8',
-          borderRadius: '8px',
-          fontWeight: 'bold'
-        }}>
-          Status: Mfumo Upo Hewani
-        </div>
+    <main style={{ padding: '40px', fontFamily: 'sans-serif', textAlign: 'center' }}>
+      <h1>Gazeti la An-Nuur</h1>
+      <p>Mfumo wa Kidijitali wa Kusoma na Kupakua Magazeti.</p>
+      
+      {/* Link ya kuhamia kwenye ukurasa wa magazeti */}
+      <div style={{ marginTop: '20px' }}>
+        <Link 
+          href="/magazeti" 
+          style={{
+            padding: '10px 20px',
+            backgroundColor: '#1d4ed8',
+            color: '#fff',
+            borderRadius: '6px',
+            textDecoration: 'none'
+          }}
+        >
+          Angalia Magazeti Yote
+        </Link>
       </div>
     </main>
   );
