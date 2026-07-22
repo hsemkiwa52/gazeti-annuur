@@ -1,4 +1,11 @@
+'use client';
+
 export default function Home() {
+  const goToMagazeti = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    window.location.href = '/magazeti/';
+  };
+
   return (
     <main style={{
       minHeight: '100vh',
@@ -27,9 +34,9 @@ export default function Home() {
         </p>
 
         <div style={{ marginTop: '25px' }}>
-          {/* Tumia tag ya asili ya HTML <a> ikiwa na slash / mwishoni */}
           <a 
             href="/magazeti/" 
+            onClick={goToMagazeti}
             style={{
               display: 'inline-block',
               padding: '12px 24px',
@@ -39,6 +46,7 @@ export default function Home() {
               textDecoration: 'none',
               fontWeight: 'bold',
               fontSize: '1rem',
+              cursor: 'pointer',
               boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
             }}
           >
