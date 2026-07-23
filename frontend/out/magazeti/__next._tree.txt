@@ -1,1 +1,1 @@
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"magazeti","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"xW4dixG8hEH48gV2gVNdU"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"magazeti","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"G6bG6fM-KyAycNQu_ZHFy"}
